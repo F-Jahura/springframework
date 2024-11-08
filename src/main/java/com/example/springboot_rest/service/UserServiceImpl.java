@@ -1,6 +1,6 @@
 package com.example.springboot_rest.service;
 
-import com.example.springboot_rest.dao.UserDAO;
+import com.example.springboot_rest.repository.UserDAO;
 import com.example.springboot_rest.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

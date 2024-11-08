@@ -1,7 +1,12 @@
 package com.example.springboot_rest.entity;
 
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity // This tells Hibernate to make a table out of this class
 @Table(name = "users")
 public class User {
@@ -17,7 +22,7 @@ public class User {
     private String email;
 
 
-    public Integer getId() {
+    /*public Integer getId() {
         return id;
     }
 
@@ -39,5 +44,5 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
-    }
+    }*/
 }

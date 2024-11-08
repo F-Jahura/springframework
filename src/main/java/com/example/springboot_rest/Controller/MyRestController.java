@@ -30,4 +30,14 @@ public class MyRestController {
         return allPeople;
 }
 
+@GetMapping("/get-name")
+    public Person getPerson(@RequestParam String name){
+        Person personName = personService.getAllPeople().stream()
+                .filter(a -> name.equals(a.getName()))
+                .findFirst()
+                .orElse(null);
+        personService.getAllPeople().removeIf(a -> name.equals(a.getName()));
+        return personName;
+    }
+
 }

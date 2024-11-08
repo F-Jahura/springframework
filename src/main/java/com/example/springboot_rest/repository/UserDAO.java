@@ -1,4 +1,4 @@
-package com.example.springboot_rest.dao;
+package com.example.springboot_rest.repository;
 
 import com.example.springboot_rest.entity.User;
 
